@@ -1,0 +1,193 @@
+#App {
+  display: flex;
+  background-color: rgb(53, 53, 53);
+  height: 100%;
+  gap: 1px;
+}
+
+.column {
+  display: flex;
+  background-color: gray;
+  padding: 5px;
+  flex: 1;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+hr {
+  width: 100%;
+}
+
+
+.zoom-url-parent {
+  margin: 0;
+  padding: 0px 5px 0px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: space-between;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.zoom-url-element {
+  font-size: 1em;
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  background-color: black;
+
+  border: 0;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+}
+
+.zoom-url-element-title {
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  min-width: 0;
+  width: 3em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.zoom-url-element-url {
+  padding: 5px;
+  border: 0;
+  flex-grow: 1;
+}
+.zoom-url-element-button {
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+  width: 2em;
+}
+.zoom-url-element-addbutton {
+
+  font-size: 1em;
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  border: 0;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+}
+
+.comcigan-search-parent {
+  display: flex;
+  height: 2em;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+.comcigan-search-parent input {
+  display: flex;
+  flex-grow: 1;
+  border: 0;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.comcigan-search-parent button {
+  border-radius: 0 5px 5px 0;
+}
+
+button {
+  display: flex;
+  align-items: center; justify-content: center;
+  border: 0;
+  background-color: lightgray;
+}
+button:hover {
+  background-color: #AAAAAA;
+}
+button:active {
+  background-color: #888888;
+}
+.comcigan-search-result {
+  margin: 0;
+  padding: 0px 5px 0px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: space-between;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 5px;
+}
+.comcigan-search-result-child {
+  font-size: 1em;
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+
+  border: 0;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+  overflow: hidden;
+  background-color: white;
+  padding-left: 5px;
+}
+.comcigan-search-result-name {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.comcigan-search-result-button {
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+  width: 3em;
+}
+
+.comcigan-table {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  border-spacing: 0;
+  background-color: white;
+  border: 1px solid;
+}
+.comcigan-table td {
+  border: 1px solid;
+}
+.comcigan-table th {
+  border: 1px solid;
+  padding: 0.5em;
+}
+
+.comcigan-search-class-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.join {
+  margin: auto;
+  width: 3em;
+  height: 2em;
+}
+
+.class-done {
+  background-color: lightgreen;
+}
+.class-progress {
+  background-color: lime;
+}
+
+.scroll {
+  overflow-y: auto;
+}

@@ -1,0 +1,59 @@
+{
+  "name": "chonggye",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "main": "public/electron.js",
+  "dependencies": {
+    "@electron/remote": "^2.0.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "comcigan-parser": "^1.0.0",
+    "electron-json-storage": "^4.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "react:start": "react-scripts start",
+    "react:build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron:start": "wait-on http://localhost:3000 && mode=dev electron .",
+    "start": "concurrently 'npm run react:start' 'npm run electron:start'",
+    "allbuild:linux": "npm run react:build && electron-builder --linux AppImage",
+    "allbuild:windows": "npm run react:build && electron-builder --windows portable"
+  },
+  "build": {
+    "appId": "kr.siyeong.autozoomconnect",
+    "directories": {
+      "buildResources": "public"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "electron": "^15.1.2",
+    "electron-builder": "^22.13.1",
+    "wait-on": "^6.0.0"
+  }
+}
